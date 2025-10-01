@@ -1,0 +1,833 @@
+body {
+    width: 99%;
+    margin: 0;
+    background-color: white;
+}
+
+.logo {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    margin-top: -17px;
+    height: 100px;
+    margin-left: 270px;
+}
+
+.section1 {
+    margin-top: -10px;
+    height: 135px;
+    margin-left: -10px;
+    width: 101%;
+    background-color: white;
+    position: fixed; /* Keep it fixed at the top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 500; 
+}
+
+.section1 button {
+    position: absolute;
+    z-index: 2;
+}
+
+.home {
+    animation-delay: 0.5s;
+    font-weight: bold;
+    font-family: 'Bebas Neue Cyrillic', sans-serif !important;
+    margin-top: -45px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    margin-left: 920px;
+    color: orangered;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+    cursor: pointer;
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Разположение на подчертаващата линия под текста */
+    width: 0%; /* Ширина на подчертаващата линия */
+    height: 2px; /* Дебелина на подчертаващата линия */
+    background-color: orangered; /* Цвят на подчертаващата линия */
+    transition: all 1s ease;
+}
+
+
+.home:hover::after {
+    width: 100%;
+}
+
+.zanas {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.6s;
+    font-weight: bold;
+    font-family: 'Bebas Neue Cyrillic', sans-serif !important;
+    margin-top: -68px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    margin-left: 1020px;
+    color: orangered;
+    cursor: pointer;
+}
+
+.trenirovki {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.7s;
+    font-weight: bold;
+    font-family: 'Bebas Neue Cyrillic', sans-serif !important;
+    margin-top: -86px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    margin-left: 1120px;
+    color: orangered;
+    cursor: pointer;
+}
+
+.subitiq2 {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.8s;
+    font-weight: bold;
+    font-family: 'Bebas Neue Cyrillic', sans-serif !important;
+    margin-top: -100px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    margin-left: 1280px;
+    color: orangered;
+    cursor: pointer;
+}
+
+.subitiq2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Разположение на подчертаващата линия под текста */
+    width: 0%; /* Ширина на подчертаващата линия */
+    height: 2px; /* Дебелина на подчертаващата линия */
+    background-color: orangered; /* Цвят на подчертаващата линия */
+    transition: all 1s ease;
+}
+
+
+.subitiq2:hover::after {
+    width: 100%;
+}
+
+.resursi {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.9s;
+    font-weight: bold;
+    font-family: 'Bebas Neue Cyrillic', sans-serif !important;
+    margin-top: -122px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    margin-left: 1410px;
+    color: orangered;
+    cursor: pointer;
+}
+
+.galeriq {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 1s;
+    font-weight: bold;
+    font-family: 'Bebas Neue Cyrillic', sans-serif !important;
+    margin-top: -136px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    margin-left: 1530px;
+    color: orangered;
+    cursor: pointer;
+}
+
+.galeriq::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Разположение на подчертаващата линия под текста */
+    width: 0%; /* Ширина на подчертаващата линия */
+    height: 2px; /* Дебелина на подчертаващата линия */
+    background-color: orangered; /* Цвят на подчертаващата линия */
+    transition: all 1s ease;
+}
+
+
+.galeriq:hover::after {
+    width: 100%;
+}
+
+.meow {
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 14px;
+}
+
+.meow2 {
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 14px;
+}
+
+.meow3 {
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 14px;
+}
+
+.menu-item {
+    position: relative; /* Allow dropdowns to be positioned absolutely */
+}
+
+.dropdown {
+    font-family: 'Phenomena-Bold', sans-serif !important;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    width: 200px;
+    display: none; /* Hide dropdowns initially */
+    position: absolute; /* Position the dropdown relative to the button */
+    top: -40px; /* Position the dropdown directly below the button */
+    left: 920px; /* Align the dropdown with the left edge of the button */
+    background-color: orangered; /* Background color of the dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    z-index: 1; /* Ensure dropdown is above other content */
+}
+
+.dropdown2 {
+    font-family: 'Phenomena-Bold', sans-serif !important;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    height: 155px;
+    width: 225px;
+    display: none; /* Hide dropdowns initially */
+    position: absolute; /* Position the dropdown relative to the button */
+    top: -60px; /* Position the dropdown directly below the button */
+    left: 1020px; /* Align the dropdown with the left edge of the button */
+    background-color: orangered; /* Background color of the dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    z-index: 1; /* Ensure dropdown is above other content */
+}
+
+.dropdown3 {
+    height: 173px;
+    font-family: 'Phenomena-Bold', sans-serif !important;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    width: 225px;
+    display: none; /* Hide dropdowns initially */
+    position: absolute; /* Position the dropdown relative to the button */
+    top: -78px; /* Position the dropdown directly below the button */
+    left: 1120px; /* Align the dropdown with the left edge of the button */
+    background-color: orangered; /* Background color of the dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    z-index: 1; /* Ensure dropdown is above other content */
+}
+
+.dropdown4 {
+    font-family: 'Phenomena-Bold', sans-serif !important;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    height: 250px;
+    width: 225px;
+    display: none; /* Hide dropdowns initially */
+    position: absolute; /* Position the dropdown relative to the button */
+    top: -96px; /* Position the dropdown directly below the button */
+    left: 1280px; /* Align the dropdown with the left edge of the button */
+    background-color: orangered; /* Background color of the dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    z-index: 1; /* Ensure dropdown is above other content */
+}
+
+.dropdown5 {
+    font-family: 'Phenomena-Bold', sans-serif !important;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    height: 155px;
+    width: 225px;
+    display: none; /* Hide dropdowns initially */
+    position: absolute; /* Position the dropdown relative to the button */
+    top: -114px; /* Position the dropdown directly below the button */
+    left: 1410px; /* Align the dropdown with the left edge of the button */
+    background-color: orangered; /* Background color of the dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    z-index: 1; /* Ensure dropdown is above other content */
+}
+
+.dropdown6 {
+    font-family: 'Phenomena-Bold', sans-serif !important;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    height: 183px;
+    width: 225px;
+    display: none; /* Hide dropdowns initially */
+    position: absolute; /* Position the dropdown relative to the button */
+    top: -131px; /* Position the dropdown directly below the button */
+    left: 1530px; /* Align the dropdown with the left edge of the button */
+    background-color: orangered; /* Background color of the dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    z-index: 1; /* Ensure dropdown is above other content */
+}
+
+.dropdown a,
+.dropdown2 a,
+.dropdown3 a,
+.dropdown4 a,
+.dropdown5 a,
+.dropdown6 a {
+    background-color: orangered; /* Background color of the dropdown */
+    display: block; /* Make links block level for easier clicking */
+    padding: 10px; /* Padding inside dropdown items */
+    color: white; /* Text color for dropdown items */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.1s ease; /* Smooth background color transition on hover */
+}
+
+.dropdown a::before,
+.dropdown2 a::before,
+.dropdown3 a::before,
+.dropdown4 a::before,
+.dropdown5 a::before,
+.dropdown6 a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: filter 0.3s ease; /* Smooth transition for brightness */
+    z-index: -1; /* Place it behind the text */
+}
+
+.dropdown a:hover,
+.dropdown2 a:hover,
+.dropdown3 a:hover,
+.dropdown4 a:hover,
+.dropdown5 a:hover,
+.dropdown6 a:hover {
+    background-color: #225F5F;
+    filter: brightness(0.8);
+}
+
+/* Show dropdown on button hover */
+.menu-item:hover .dropdown,
+.menu-item:hover .dropdown2,
+.menu-item:hover .dropdown3,
+.menu-item:hover .dropdown4,
+.menu-item:hover .dropdown5,
+.menu-item:hover .dropdown6 {
+    filter: brightness(1); /* Restore original brightness on hover */
+    display: block; /* Show dropdown when hovering over the menu item */
+}
+
+
+.section1 button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-family: 'Bebas Neue Cyrillic', sans-serif !important;
+    color: orangered;
+    font-size: 16px;
+    top: -15px;
+    left: 0;
+}
+
+.texts1 {
+    color:white;
+    margin-top: -11px;
+}
+
+.texts2 {
+    color:white;
+    margin-top: -10px;
+}
+
+.texts3 {
+    color:white;
+    margin-top: -10px;
+}
+
+.backgroundofdropdown {
+    position: absolute;
+    z-index: -1;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.logos {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+    margin-top: -152px;
+    margin-left: 1690px;
+    position: absolute;
+    z-index: 2;
+}
+
+.instagramlogo {
+    transition: scale 0.4s ease; /* Плавна анимация за увеличаване */
+    animation-delay: 1.1s;
+    height: 20px;
+}
+
+.instagramlogo:hover {
+    filter: invert(46%) sepia(7%) saturate(5260%) hue-rotate(324deg) brightness(89%) contrast(95%);
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.tiktoklogo {
+    transition: scale 0.4s ease; /* Плавна анимация за увеличаване */
+    animation-delay: 1.2s;
+    margin-left: 10px;
+    height: 20px;
+}
+
+.tiktoklogo:hover {
+    filter: invert(46%) sepia(7%) saturate(5260%) hue-rotate(324deg) brightness(89%) contrast(95%);
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.facebooklogo {
+    transition: scale 1s ease; /* Плавна анимация за увеличаване */
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+    margin-top: -156px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 1750px;
+    height: 26px;
+}
+
+.facebooklogo:hover {
+    filter: invert(46%) sepia(7%) saturate(5260%) hue-rotate(324deg) brightness(89%) contrast(95%);
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.youtubelogo {
+    transition: scale 1s ease; /* Плавна анимация за увеличаване */
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+    position: absolute;
+    z-index: 2;
+    margin-left: 1785px;
+    margin-top: -152px;
+    height: 18px;
+}
+
+.youtubelogo:hover {
+    filter: invert(46%) sepia(7%) saturate(5260%) hue-rotate(324deg) brightness(89%) contrast(95%);
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.section1 p {
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+}
+
+.motivation {
+    font-weight: bold;
+    height: 28px;
+    font-family: 'Phenomena-Bold', sans-serif !important;
+    margin-top: -27px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.backgroundmotivation {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideIn 1s forwards;
+    height: 35px;
+    width: 100%;
+}
+
+.svurjetesesnas {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.svurjetesezaglavie {
+    font-family: "Century Gothic", sans-serif;
+    color: #225F5F;
+}
+
+.line {
+    margin-left: 350px;
+    width: 0; /* Започва с нулева ширина */
+    height: 6px;
+    background-color: orangered;
+    border-radius: 3px;
+    opacity: 0; /* Започва невидима */
+    animation: fadeInLeft 2s ease-out forwards;
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    100% {
+      width: 62%; /* Линията се разширява */
+      opacity: 1;
+    }
+  }
+
+ .svurjise {
+    font-family: Verdana, Geneva, sans-serif;
+    height: 100px;
+    align-items: center;
+ }
+
+ .contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+ }
+
+ .contact-inputs {
+    resize: none;
+    padding-left: 25px;
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    border-radius: 15px;
+ }
+
+ .contact-inputs:focus {
+    border: 1px solid orangered;
+ }
+ .contact-inputs::placeholder {
+    font-size: 16px;
+    color: #225F5F;
+ }
+
+ .contact-left textarea {
+    padding-top: 15px;
+    height: 100px;
+    border-radius: 20px;
+ }
+
+ .contact-left textarea::placeholder {
+    font-size: 18px;
+ }
+
+ .izprati {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: orangered;
+    cursor: pointer;
+ }
+
+ .lastsection {
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(Logo_brutaly_transperant.png);
+    top: 0;
+    display: flex;
+    margin-left: -10px;
+    width: 101.55%;
+    height: 300px;
+    background-color: orangered;
+    margin-top: 245px;
+}
+
+.logolast {
+    margin-top: 80px;
+    margin-left: 200px;
+    height: 150px;
+}
+
+.adresnatva {
+    margin-left: 140px;
+    margin-top: 30px;
+    font-family: 'Phenomena-Bold', sans-serif !important;
+    color: white;
+    font-size: 18px;
+}
+
+.adresnatva a {
+    color: white;
+}
+
+.kontakti {
+    margin-top: 105px;
+    margin-left: 150px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Phenomena-Bold', sans-serif !important;
+}
+
+.kontakti a{
+    color: white;
+}
+
+.gmail {
+    margin-top: -20px;
+}
+
+.rabotnovreme {
+    margin-top: 40px;
+    margin-left: 1000px;
+    font-family: 'Phenomena-Bold', sans-serif !important;
+    color: white;
+    font-size: 18px;
+}
+
+.rabotnovreme a {
+    color: white;
+}
+
+.chasove {
+    font-weight: bold;
+}
+
+  .obshtiusloviqitn a {
+    text-decoration: underline;
+        color: white;
+  }
+
+  .obshtiusloviqitn {
+    margin-top: 120px;
+    font-size: 18px;
+    margin-left: -600px;
+  }
+
+  /* ========================= */
+/* 📱 Responsive Design */
+/* ========================= */
+
+/* Tablet & Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    body {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .logo {
+      margin: 0 auto;
+      display: block;
+      height: 70px;
+    }
+  
+    .section1 {
+      height: 90px;
+      width: 100%;
+      margin: 0;
+      padding: 0 10px;
+      position: fixed;
+    }
+  
+    /* Скриваме голямото меню */
+    .home,
+    .zanas,
+    .trenirovki,
+    .subitiq2,
+    .resursi,
+    .galeriq {
+      display: none;
+    }
+  
+    /* Скриваме dropdown-ите */
+    .dropdown,
+    .dropdown2,
+    .dropdown3,
+    .dropdown4,
+    .dropdown5,
+    .dropdown6 {
+      display: none !important;
+    }
+  
+    /* Скриваме социални икони */
+    .logos,
+    .instagramlogo,
+    .tiktoklogo,
+    .facebooklogo,
+    .youtubelogo {
+      display: none;
+    }
+  
+    .motivation {
+      font-size: 14px;
+      padding: 0 15px;
+      margin-top: 100px;
+      text-align: center;
+    }
+  
+    .backgroundmotivation {
+      height: 40px;
+      margin-top: -20px;
+    }
+  
+    .svurjetesesnas {
+      margin-top: 150px;
+      padding: 0 20px;
+    }
+  
+    .line {
+      width: 80% !important;
+      margin: 20px auto;
+    }
+  
+    .contact-inputs {
+      width: 90%;
+      max-width: 400px;
+    }
+  
+    .lastsection {
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+      margin: 0;
+      padding: 30px 20px;
+      text-align: center;
+    }
+  
+    .logolast {
+      margin: 0 auto 20px;
+      height: 120px;
+    }
+  
+    .adresnatva,
+    .kontakti,
+    .rabotnovreme,
+    .obshtiusloviqitn {
+      margin: 15px auto;
+      text-align: center;
+      font-size: 16px;
+    }
+  
+    .gmail {
+      margin-top: 0;
+    }
+  
+    .obshtiusloviqitn {
+      margin-top: 20px;
+    }
+  }
+  
+  /* Extra Small Devices (max-width: 480px) */
+  @media screen and (max-width: 480px) {
+    .logo {
+        margin-top: -7px;
+        height: 80px;
+        margin-left: 150px;
+        margin-right: auto;
+        display: block;
+      }
+    
+      .section1 {
+        margin-left: -10px;
+        height: 120px;
+        padding: 0 5px;
+      }
+    
+      .backgroundmotivation {
+        height: 45px;
+        width: 102%;
+        margin: 0;
+      }
+    
+      .motivation {
+        font-size: 12px;
+        margin-top: -40px;
+      }
+    
+      .line,
+      .line1 {
+        width: 90% !important;
+      }
+  
+    .svurjetesezaglavie {
+      font-size: 20px;
+    }
+  
+    .line {
+      width: 90% !important;
+    }
+  
+    .contact-inputs {
+      width: 95%;
+      font-size: 14px;
+    }
+  
+    .izprati {
+      font-size: 16px;
+      padding: 12px 25px;
+    }
+  
+    .lastsection {
+      width: auto;
+      height: 700px;
+    padding: 20px 15px;
+  }
+
+  .logolast {
+    height: 80px;
+  }
+
+  .adresnatva,
+  .kontakti,
+  .obshtiusloviqitn {
+    font-size: 16px;
+  }
+
+  .rabotnovreme {
+      margin-top: 300px;
+      font-size: 16px;
+  }
+  }

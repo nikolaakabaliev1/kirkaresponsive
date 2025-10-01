@@ -1,0 +1,1271 @@
+
+
+body {
+    width: 99%;
+    margin: 0;
+    background-color: white;
+}
+
+.logo {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    margin-top: -17px;
+    height: 100px;
+    margin-left: 270px;
+}
+
+.section1 {
+    margin-top: -10px;
+    height: 135px;
+    margin-left: -10px;
+    width: 101%;
+    background-color: white;
+    position: fixed; /* Keep it fixed at the top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 500; 
+}
+
+.section1 button {
+    position: absolute;
+    z-index: 2;
+}
+
+.home {
+    animation-delay: 0.5s;
+    font-weight: bold;
+    font-family: 'Bebas Neue Cyrillic', sans-serif !important;
+    margin-top: -45px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    margin-left: 920px;
+    color: orangered;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+    cursor: pointer;
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Разположение на подчертаващата линия под текста */
+    width: 0%; /* Ширина на подчертаващата линия */
+    height: 2px; /* Дебелина на подчертаващата линия */
+    background-color: orangered; /* Цвят на подчертаващата линия */
+    transition: all 1s ease;
+}
+
+
+.home:hover::after {
+    width: 100%;
+}
+
+.zanas {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.6s;
+    font-weight: bold;
+    font-family: 'Bebas Neue Cyrillic', sans-serif !important;
+    margin-top: -68px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    margin-left: 1020px;
+    color: orangered;
+    cursor: pointer;
+}
+
+.trenirovki {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.7s;
+    font-weight: bold;
+    font-family: 'Bebas Neue Cyrillic', sans-serif !important;
+    margin-top: -86px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    margin-left: 1120px;
+    color: orangered;
+    cursor: pointer;
+}
+
+.subitiq2 {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.8s;
+    font-weight: bold;
+    font-family: 'Bebas Neue Cyrillic', sans-serif !important;
+    margin-top: -100px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    margin-left: 1280px;
+    color: orangered;
+    cursor: pointer;
+}
+
+.subitiq2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Разположение на подчертаващата линия под текста */
+    width: 0%; /* Ширина на подчертаващата линия */
+    height: 2px; /* Дебелина на подчертаващата линия */
+    background-color: orangered; /* Цвят на подчертаващата линия */
+    transition: all 1s ease;
+}
+
+
+.subitiq2:hover::after {
+    width: 100%;
+}
+
+.resursi {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.9s;
+    font-weight: bold;
+    font-family: 'Bebas Neue Cyrillic', sans-serif !important;
+    margin-top: -122px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    margin-left: 1410px;
+    color: orangered;
+    cursor: pointer;
+}
+
+.galeriq {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 1s;
+    font-weight: bold;
+    font-family: 'Bebas Neue Cyrillic', sans-serif !important;
+    margin-top: -136px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    margin-left: 1530px;
+    color: orangered;
+    cursor: pointer;
+}
+
+.galeriq::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Разположение на подчертаващата линия под текста */
+    width: 0%; /* Ширина на подчертаващата линия */
+    height: 2px; /* Дебелина на подчертаващата линия */
+    background-color: orangered; /* Цвят на подчертаващата линия */
+    transition: all 1s ease;
+}
+
+
+.galeriq:hover::after {
+    width: 100%;
+}
+
+.meow {
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 14px;
+}
+
+.meow2 {
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 14px;
+}
+
+.meow3 {
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 14px;
+}
+
+.menu-item {
+    position: relative; /* Allow dropdowns to be positioned absolutely */
+}
+
+.dropdown {
+    font-family: 'Phenomena-Bold', sans-serif !important;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    width: 200px;
+    display: none; /* Hide dropdowns initially */
+    position: absolute; /* Position the dropdown relative to the button */
+    top: -40px; /* Position the dropdown directly below the button */
+    left: 920px; /* Align the dropdown with the left edge of the button */
+    background-color: orangered; /* Background color of the dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    z-index: 1; /* Ensure dropdown is above other content */
+}
+
+.dropdown2 {
+    font-family: 'Phenomena-Bold', sans-serif !important;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    height: 155px;
+    width: 225px;
+    display: none; /* Hide dropdowns initially */
+    position: absolute; /* Position the dropdown relative to the button */
+    top: -60px; /* Position the dropdown directly below the button */
+    left: 1020px; /* Align the dropdown with the left edge of the button */
+    background-color: orangered; /* Background color of the dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    z-index: 1; /* Ensure dropdown is above other content */
+}
+
+.dropdown3 {
+    height: 173px;
+    font-family: 'Phenomena-Bold', sans-serif !important;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    width: 225px;
+    display: none; /* Hide dropdowns initially */
+    position: absolute; /* Position the dropdown relative to the button */
+    top: -78px; /* Position the dropdown directly below the button */
+    left: 1120px; /* Align the dropdown with the left edge of the button */
+    background-color: orangered; /* Background color of the dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    z-index: 1; /* Ensure dropdown is above other content */
+}
+
+.dropdown4 {
+    font-family: 'Phenomena-Bold', sans-serif !important;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    height: 250px;
+    width: 225px;
+    display: none; /* Hide dropdowns initially */
+    position: absolute; /* Position the dropdown relative to the button */
+    top: -96px; /* Position the dropdown directly below the button */
+    left: 1280px; /* Align the dropdown with the left edge of the button */
+    background-color: orangered; /* Background color of the dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    z-index: 1; /* Ensure dropdown is above other content */
+}
+
+.dropdown5 {
+    font-family: 'Phenomena-Bold', sans-serif !important;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    height: 155px;
+    width: 225px;
+    display: none; /* Hide dropdowns initially */
+    position: absolute; /* Position the dropdown relative to the button */
+    top: -114px; /* Position the dropdown directly below the button */
+    left: 1410px; /* Align the dropdown with the left edge of the button */
+    background-color: orangered; /* Background color of the dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    z-index: 1; /* Ensure dropdown is above other content */
+}
+
+.dropdown6 {
+    font-family: 'Phenomena-Bold', sans-serif !important;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    height: 183px;
+    width: 225px;
+    display: none; /* Hide dropdowns initially */
+    position: absolute; /* Position the dropdown relative to the button */
+    top: -131px; /* Position the dropdown directly below the button */
+    left: 1530px; /* Align the dropdown with the left edge of the button */
+    background-color: orangered; /* Background color of the dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    z-index: 1; /* Ensure dropdown is above other content */
+}
+
+.dropdown a,
+.dropdown2 a,
+.dropdown3 a,
+.dropdown4 a,
+.dropdown5 a,
+.dropdown6 a {
+    background-color: orangered; /* Background color of the dropdown */
+    display: block; /* Make links block level for easier clicking */
+    padding: 10px; /* Padding inside dropdown items */
+    color: white; /* Text color for dropdown items */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.1s ease; /* Smooth background color transition on hover */
+}
+
+.dropdown a::before,
+.dropdown2 a::before,
+.dropdown3 a::before,
+.dropdown4 a::before,
+.dropdown5 a::before,
+.dropdown6 a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: filter 0.3s ease; /* Smooth transition for brightness */
+    z-index: -1; /* Place it behind the text */
+}
+
+.dropdown a:hover,
+.dropdown2 a:hover,
+.dropdown3 a:hover,
+.dropdown4 a:hover,
+.dropdown5 a:hover,
+.dropdown6 a:hover {
+    background-color: #225F5F;
+    filter: brightness(0.8);
+}
+
+/* Show dropdown on button hover */
+.menu-item:hover .dropdown,
+.menu-item:hover .dropdown2,
+.menu-item:hover .dropdown3,
+.menu-item:hover .dropdown4,
+.menu-item:hover .dropdown5,
+.menu-item:hover .dropdown6 {
+    filter: brightness(1); /* Restore original brightness on hover */
+    display: block; /* Show dropdown when hovering over the menu item */
+}
+
+
+.section1 button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-family: 'Bebas Neue Cyrillic', sans-serif !important;
+    color: orangered;
+    font-size: 16px;
+    top: -15px;
+    left: 0;
+}
+
+.texts1 {
+    color:white;
+    margin-top: -11px;
+}
+
+.texts2 {
+    color:white;
+    margin-top: -10px;
+}
+
+.texts3 {
+    color:white;
+    margin-top: -10px;
+}
+
+.backgroundofdropdown {
+    position: absolute;
+    z-index: -1;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.logos {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+    margin-top: -152px;
+    margin-left: 1690px;
+    position: absolute;
+    z-index: 2;
+}
+
+.instagramlogo {
+    transition: scale 0.4s ease; /* Плавна анимация за увеличаване */
+    animation-delay: 1.1s;
+    height: 20px;
+}
+
+.instagramlogo:hover {
+    filter: invert(46%) sepia(7%) saturate(5260%) hue-rotate(324deg) brightness(89%) contrast(95%);
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.tiktoklogo {
+    transition: scale 0.4s ease; /* Плавна анимация за увеличаване */
+    animation-delay: 1.2s;
+    margin-left: 10px;
+    height: 20px;
+}
+
+.tiktoklogo:hover {
+    filter: invert(46%) sepia(7%) saturate(5260%) hue-rotate(324deg) brightness(89%) contrast(95%);
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.facebooklogo {
+    transition: scale 1s ease; /* Плавна анимация за увеличаване */
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+    margin-top: -156px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 1750px;
+    height: 26px;
+}
+
+.facebooklogo:hover {
+    filter: invert(46%) sepia(7%) saturate(5260%) hue-rotate(324deg) brightness(89%) contrast(95%);
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.youtubelogo {
+    transition: scale 1s ease; /* Плавна анимация за увеличаване */
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+    position: absolute;
+    z-index: 2;
+    margin-left: 1785px;
+    margin-top: -152px;
+    height: 18px;
+}
+
+.youtubelogo:hover {
+    filter: invert(46%) sepia(7%) saturate(5260%) hue-rotate(324deg) brightness(89%) contrast(95%);
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.section1 p {
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+}
+
+.motivation {
+    font-weight: bold;
+    height: 28px;
+    font-family: 'Phenomena-Bold', sans-serif !important;
+    margin-top: -27px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.backgroundmotivation {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideIn 1s forwards;
+    height: 35px;
+    width: 100%;
+}
+
+.line {
+    margin-left: 350px;
+    width: 0; /* Започва с нулева ширина */
+    height: 6px;
+    background-color: orangered;
+    border-radius: 3px;
+    opacity: 0; /* Започва невидима */
+    animation: fadeInLeft 2s ease-out forwards;
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    100% {
+      width: 62%; /* Линията се разширява */
+      opacity: 1;
+    }
+  }
+
+  .subitiq3 {
+    margin-top: 150px;
+}
+
+  .titlesubitiq {
+    font-family: "Century Gothic", sans-serif;
+    color: #225F5F;
+    text-align: center;
+  }
+
+  .predstoqshtisubitiq {
+    margin-top: 140px;
+  }
+
+  .subitiq {
+    font-family: "Century Gothic", sans-serif;
+    color: white;
+    height: 100px;
+    margin-top: 100px;
+}
+
+.namesofsubitiq {
+    margin-top: 150px;
+}
+
+.firstsubitie {
+    position: relative;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 55px;
+    background-size: cover;
+    background-image: url(nz.jpg);
+    background-position: center center;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-top: -120px;
+    margin-left:40px;
+    text-align: center;
+    height: 500px;
+    width: 900px;
+    overflow: hidden;
+}
+
+.firstsubitie::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Промени стойността за по-светъл или тъмен ефект */
+    border-radius: 55px; /* За съответствие с контейнера */
+}
+
+.titleofsubitie {
+    filter: brightness(100%);
+    color: white;
+}
+
+.titleofsecondsubitie {
+    filter: brightness(100%);
+    color: white;
+}
+
+.descriptionofsubitie {
+    color: white;
+    filter: brightness(100%);
+    font-size: 20px;
+}
+
+.registriraise {
+    margin-top: 20px;
+}
+
+.dateofsubitie {
+    filter: brightness(100%);
+    font-size: 20px;
+    margin-left: 5px;
+    color: white;
+}
+
+.dateofsubitie2 {
+    filter: brightness(100%);
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+}
+
+.descriptionofsubitie2 {
+    color: white;
+    filter: brightness(100%);
+    font-size: 20px;
+}
+
+.secondsubitie {
+    position: relative;
+    border-radius: 55px;
+    background-size: cover;
+    background-image: url(namrushten.jpg);
+    background-position: center center;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
+    margin-top: -517px;
+    margin-left: 960px;
+    height: 500px;
+    width: 900px;
+    overflow: hidden;
+}
+
+.secondsubitie::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Промени стойността за по-светъл или тъмен ефект */
+    border-radius: 55px; /* За съответствие с контейнера */
+}
+
+.lookmore {
+    color: black;
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    z-index: 2;
+    margin-top: 20px;
+    margin-left: 895px;
+    transition: all 0.5s ease-out;
+    transform: translateX(0);
+    cursor: pointer;
+}
+
+.lookmore:hover {
+    transition: transform 0.3s ease-in;
+    transform: translateX(-20px);
+    color: orangered;
+}
+
+.strelka1 {
+    border: none;
+    background: none;
+    opacity: 0; /* Make the arrow hidden initially */
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 990px;
+    color: orangered;
+    font-size: 22px;
+    transform: translateX(30px);
+    transition: all 0.3s;
+}
+
+.lookmore:hover + .strelka1 {
+    opacity: 1; /* Show the arrow on hover */
+    transform: translateX(5px);
+    transition: all 0.3s;
+}
+
+.registriraise {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    z-index: 2;
+    margin-top: 20px;
+    margin-left: -70px;
+    transition: all 0.5s ease-out;
+    transform: translateX(0);
+    cursor: pointer;
+}
+
+.registriraise:hover {
+    font-weight: bold;
+    transition: transform 0.3s ease-in;
+    transform: translateX(-20px);
+    color: white;
+}
+
+.strelka {
+    font-weight: bold;
+    border: none;
+    background: none;
+    opacity: 0; /* Make the arrow hidden initially */
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 50px;
+    color: white;
+    font-size: 22px;
+    transform: translateX(30px);
+    transition: all 0.3s;
+}
+
+.registriraise:hover + .strelka {
+    font-weight: bold;
+    opacity: 1; /* Show the arrow on hover */
+    transform: translateX(5px);
+    transition: all 0.3s;
+}
+
+.sustezaniq {
+    margin-top: 130px;
+}
+
+.titlesustezaniq {
+    margin-left: 10px;
+    font-family: "Century Gothic", sans-serif;
+    color: #225F5F;
+    text-align: center;
+}
+
+.data {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+}
+
+.pruvosustezanie {
+    margin-left:40px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: white;
+    border-radius: 55px;
+    text-align: center;
+    height: 500px;
+    width: 900px;
+    background-image: url(zasustezanie.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative; /* Necessary for pseudo-element positioning */
+    overflow: hidden; /* Ensures pseudo-element stays within bounds */
+}
+
+.pruvosustezanie::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25); /* По-тъмно изображение */
+    border-radius: 55px;
+    z-index: 1; /* Изпраща тъмния слой зад текста */
+}
+
+.pruvosustezanie * {
+    position: relative; /* Ensure the text and child elements stay above the pseudo-element */
+    z-index: 2;
+}
+
+.vtorosustezanie {
+    margin-top: -520px;
+    margin-left: 960px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: white;
+    border-radius: 55px;
+    text-align: center;
+    height: 500px;
+    width: 900px;
+    background-image: url(zasustezanie2.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative; /* Necessary for pseudo-element positioning */
+    overflow: hidden; /* Ensures pseudo-element stays within bounds */
+}
+
+.vtorosustezanie::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25); /* No overlay by default */
+    z-index: 1;
+    border-radius: 55px; /* Matches the parent element's border-radius */
+    transition: background 0.3s ease; /* Smooth transition effect */
+}
+
+.vtorosustezanie * {
+    position: relative; /* Ensure the text and child elements stay above the pseudo-element */
+    z-index: 2;
+}
+
+.titlemeropriqtiq {
+    font-family: "Century Gothic", sans-serif;
+    color: #225F5F;
+    text-align: center;
+}
+
+.infozameropriqtie1 {
+    font-size: 18px;
+    margin-left: 45px;
+    width: 800px;
+}
+
+.pruvomeropriqtie {
+    color: white;
+    background-image: url(new1.jpg);
+    background-size: cover;
+    background-position: right center;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-left: 40px;
+    text-align: center;
+    height: 500px;
+    width: 900px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 55px;
+    position: relative; /* Add relative positioning for the pseudo-element */
+    overflow: hidden; /* Ensure the pseudo-element does not extend beyond borders */
+}
+
+.pruvomeropriqtie::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* Use the same background image */
+    background-size: inherit;
+    background-position: inherit;
+    filter: brightness(75%); /* Apply brightness filter */
+    z-index: 1; /* Ensure the pseudo-element stays behind the text */
+    border-radius: inherit; /* Match the border-radius of the parent */
+}
+
+.pruvomeropriqtie * {
+    position: relative; /* Ensure the text and child elements stay above the pseudo-element */
+    z-index: 2;
+}
+
+.vtoromeropriqtie {
+    color: white;
+    background-image: url(new2.jpg);
+    background-size: cover;
+    background-position: right center;
+    margin-top: -500px;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-left: 960px;
+    text-align: center;
+    height: 500px;
+    width: 900px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 55px;
+    position: relative; /* Add relative positioning for the pseudo-element */
+    overflow: hidden; /* Ensure the pseudo-element does not extend beyond borders */
+}
+
+.vtoromeropriqtie::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* Use the same background */
+    background-size: inherit;
+    background-position: inherit;
+    filter: brightness(75%); /* Reduce brightness */
+    z-index: 1; /* Ensure it stays below the text */
+    border-radius: inherit; /* Match the border radius of the parent */
+}
+
+.vtoromeropriqtie * {
+    position: relative; /* Ensure text appears above the dimmed background */
+    z-index: 2;
+}
+
+.pruviseminar {
+    color: white;
+    background-image: url(new3.jpg);
+    background-size: cover;
+    background-position: right center;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-left: 40px;
+    text-align: center;
+    height: 500px;
+    width: 900px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 55px;
+    position: relative; /* Enable positioning for pseudo-element */
+    overflow: hidden; /* Ensure the pseudo-element stays inside the rounded corners */
+}
+
+.pruviseminar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* Use the same background image */
+    background-size: inherit;
+    background-position: inherit;
+    filter: brightness(75%); /* Apply 75% brightness filter */
+    z-index: 1; /* Ensure the pseudo-element is behind the text */
+    border-radius: inherit; /* Match the border-radius of the parent */
+}
+
+.pruviseminar * {
+    position: relative; /* Ensure text and child elements are above the pseudo-element */
+    z-index: 2;
+}
+
+.vtoriseminar {
+    color: white;
+    background-image: url(new4.jpg);
+    background-size: cover;
+    background-position: right center;
+    margin-top: -504px;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-left: 960px;
+    text-align: center;
+    height: 500px;
+    width: 900px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 55px;
+    position: relative; /* Enable positioning for pseudo-element */
+    overflow: hidden; /* Keep the pseudo-element within rounded corners */
+}
+
+.vtoriseminar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* Use the same background image */
+    background-size: inherit;
+    background-position: inherit;
+    filter: brightness(75%); /* Apply 75% brightness filter */
+    z-index: 1; /* Ensure the pseudo-element stays behind the text */
+    border-radius: inherit; /* Match the border-radius of the parent */
+}
+
+.vtoriseminar * {
+    position: relative; /* Ensure the text remains on top of the pseudo-element */
+    z-index: 2;
+}
+
+.zapishise {
+    border: none;
+    font-size: 18px;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    color: black;
+    overflow: hidden;
+    padding: 10px 20px; /* Добавяне на малко вътрешно разстояние */
+    border-radius: 25px; /* Заобляне на края на бутона */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавена сянка на бутона */
+}
+
+.zapishise::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: orangered;
+    transition: 0.3s ease-in-out;
+    z-index: -1;
+    border-radius: 25px; /* Заобляне на края на анимацията */
+}
+
+.zapishise:hover {
+    color: #fff;
+}
+
+.zapishise:hover::before {
+    left: 0;
+}
+
+.zapishise:active {
+    transform: scale(0.95);
+}
+
+.zapishise1 {
+    margin-top: -3px;
+    border: none;
+    font-size: 18px;
+    background: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    color: black;
+    overflow: hidden;
+    padding: 10px 20px; /* Добавяне на малко вътрешно разстояние */
+    border-radius: 25px; /* Заобляне на края на бутона */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавена сянка на бутона */
+}
+
+.zapishise1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: orangered;
+    transition: 0.3s ease-in-out;
+    z-index: -1;
+    border-radius: 25px; /* Заобляне на края на анимацията */
+}
+
+.zapishise1:hover {
+    color: #fff;
+}
+
+.zapishise1:hover::before {
+    left: 0;
+}
+
+.zapishise1:active {
+    transform: scale(0.95);
+}
+
+
+.lastsection {
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(Logo_brutaly_transperant.png);
+    top: 0;
+    display: flex;
+    margin-left: -10px;
+    width: 101.55%;
+    height: 300px;
+    background-color: orangered;
+    margin-top: 235px;
+}
+
+.logolast {
+    margin-top: 80px;
+    margin-left: 200px;
+    height: 150px;
+}
+
+.adresnatva {
+    margin-left: 140px;
+    margin-top: 30px;
+    font-family: 'Phenomena-Bold', sans-serif !important;
+    color: white;
+    font-size: 18px;
+}
+
+.adresnatva a {
+    color: white;
+}
+
+.kontakti {
+    margin-top: 105px;
+    margin-left: 150px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Phenomena-Bold', sans-serif !important;
+}
+
+.kontakti a{
+    color: white;
+}
+
+.gmail {
+    margin-top: -20px;
+}
+
+.rabotnovreme {
+    margin-top: 40px;
+    margin-left: 1000px;
+    font-family: 'Phenomena-Bold', sans-serif !important;
+    color: white;
+    font-size: 18px;
+}
+
+.rabotnovreme a {
+    color: white;
+}
+
+.chasove {
+    font-weight: bold;
+}
+
+  .obshtiusloviqitn a {
+    text-decoration: underline;
+        color: white;
+  }
+
+  .obshtiusloviqitn {
+    margin-top: 120px;
+    font-size: 18px;
+    margin-left: -600px;
+  }
+
+  /* ========================= */
+/* 📱 Таблети и малки лаптопи */
+/* ========================= */
+@media screen and (max-width: 768px) {
+
+    /* Скриваме горното меню и социални икони */
+    .home, .zanas, .trenirovki, .subitiq2, .resursi, .galeriq,
+    .logos, .instagramlogo, .tiktoklogo, .facebooklogo, .youtubelogo {
+        display: none;
+    }
+
+    .logo {
+        margin: 10px auto;
+        display: block;
+        height: 70px;
+    }
+
+    .section1 {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+    }
+
+    .motivation {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .line {
+        margin: 20px auto;
+        width: 70% !important;
+    }
+
+    /* Карти със събития и състезания */
+    .firstsubitie, .secondsubitie,
+    .pruvosustezanie, .vtorosustezanie,
+    .pruvomeropriqtie, .vtoromeropriqtie,
+    .pruviseminar, .vtoriseminar {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        border-radius: 25px;
+    }
+
+    .descriptionofsubitie,
+    .descriptionofsubitie2,
+    .infozameropriqtie1 {
+        font-size: 16px;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /* Футър */
+    .lastsection {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin: 40px 0 0 0;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .logolast {
+        margin: 20px auto;
+        height: 100px;
+    }
+
+    .adresnatva, .kontakti, .rabotnovreme, .obshtiusloviqitn {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .rabotnovreme, .obshtiusloviqitn {
+        margin-left: 0;
+    }
+}
+
+/* ========================= */
+/* 📱 Телефони */
+/* ========================= */
+@media screen and (max-width: 480px) {
+
+    .logo {
+        margin-top: -5px;
+        height: 80px;
+        margin-left: 150px;
+        margin-right: auto;
+        display: block;
+      }
+    
+      .section1 {
+          margin-left: -10px;
+        height: 120px;
+        padding: 0 5px;
+      }
+    
+      .backgroundmotivation {
+        height: 45px;
+        width: 102%;
+        margin: 0;
+      }
+    
+      .motivation {
+        font-size: 12px;
+        margin-top: -40px;
+      }
+    
+      .line,
+      .line1 {
+        width: 90% !important;
+      }
+
+    /* Карти */
+    .firstsubitie, .secondsubitie,
+    .pruvosustezanie, .vtorosustezanie,
+    .pruvomeropriqtie, .vtoromeropriqtie,
+    .pruviseminar, .vtoriseminar {
+        width: 95%;
+        margin: 15px auto;
+        border-radius: 55px;
+    }
+
+    .descriptionofsubitie,
+    .descriptionofsubitie2,
+    .infozameropriqtie1 {
+        font-size: 14px;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /* Бутоните */
+    .zapishise, .zapishise1,
+    .registriraise, .lookmore {
+        font-size: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .lastsection {
+        width: auto;
+        height: 700px;
+      padding: 20px 15px;
+    }
+  
+    .logolast {
+      height: 80px;
+    }
+  
+    .adresnatva,
+    .kontakti,
+    .obshtiusloviqitn {
+      font-size: 16px;
+    }
+
+    .rabotnovreme {
+        margin-top: 300px;
+        font-size: 16px;
+    }
+}
